@@ -1,9 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Switch } from 'react-router-dom';
-// Route
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import Login from './containers/Login';
+
 const Routes = () => (
   <BrowserRouter>
-    <Switch />
+    <Switch>
+      <Route exact path="/" component={Login} />
+    </Switch>
   </BrowserRouter>
 );
 
