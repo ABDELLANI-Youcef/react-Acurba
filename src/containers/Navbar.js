@@ -15,7 +15,7 @@ const Navbar = ({ authToken, removeToken }) => {
 
   if (authToken.admin) {
     adminText = (
-      <Link to="/create_car">Create a car</Link>
+      <Link to="/create_car">check projects</Link>
     );
   }
 
@@ -23,7 +23,7 @@ const Navbar = ({ authToken, removeToken }) => {
     return (
       <div className={styles.navbar}>
         <Link to="/">HOME</Link>
-        <Link to="/appointments">Appointments</Link>
+        <Link to="/appointments">Vos demandes</Link>
         {adminText}
         <button type="button" onClick={logout}>Log out</button>
       </div>
