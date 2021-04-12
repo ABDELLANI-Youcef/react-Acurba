@@ -7,6 +7,7 @@ import SignUp from './containers/SignUp';
 import Welcome from './components/Welcome';
 import Navbar from './containers/Navbar';
 import Home from './components/Home';
+import PermetConstruire from './containers/PermetConstruire';
 
 const Routes = ({ auth }) => {
   if (auth.authToken === '') {
@@ -26,6 +27,7 @@ const Routes = ({ auth }) => {
       <Navbar />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route exact path="/permet_de_construire" component={PermetConstruire} />
       </Switch>
     </BrowserRouter>
   );

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => (
   <div>
     <h1>
@@ -7,7 +9,7 @@ const Home = () => (
     <p>Certaficat de Morcellement</p>
     <p>Certaficat de lotir</p>
     <p>permis de demolir</p>
-    <p>Permis de construire</p>
+    <Link to="/permet_de_construire">Permis de construire</Link>
     <p>Certaficat de Conformetè</p>
     <p>Certaficat d&apos;Urbanisme</p>
   </div>
